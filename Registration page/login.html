@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url(./public/image/back.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div
+        style="
+          width: 675px;
+          height: 90vh;
+          top: 50px;
+          position: relative;
+          margin: auto;
+          overflow: hidden;
+          background: #dce5b8;
+          border-width: 1px;
+          border-color: #000;
+        "
+      >
+        <svg
+          width="132"
+          height="200"
+          viewBox="0 0 132 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: -69px; top: 724px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M132 100C132 155.228 87.2285 200 32 200C-23.2285 200 -68 155.228 -68 100C-68 44.7715 -23.2285 0 32 0C87.2285 0 132 44.7715 132 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M131.5 100C131.5 154.952 86.9523 199.5 32 199.5C-22.9523 199.5 -67.5 154.952 -67.5 100C-67.5 45.0477 -22.9523 0.5 32 0.5C86.9523 0.5 131.5 45.0477 131.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="350"
+          height="144"
+          viewBox="0 0 350 144"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: -1px; top: -207px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M350 -31C350 65.6498 271.65 144 175 144C78.3502 144 0 65.6498 0 -31C0 -127.65 78.3502 -206 175 -206C271.65 -206 350 -127.65 350 -31Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M349.5 -31C349.5 65.3737 271.374 143.5 175 143.5C78.6263 143.5 0.5 65.3737 0.5 -31C0.5 -127.374 78.6263 -205.5 175 -205.5C271.374 -205.5 349.5 -127.374 349.5 -31Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="132"
+          height="250"
+          viewBox="0 0 132 250"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 542px; top: 297px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M250 125C250 194.036 194.036 250 125 250C55.9644 250 0 194.036 0 125C0 55.9644 55.9644 0 125 0C194.036 0 250 55.9644 250 125Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M249.5 125C249.5 193.759 193.759 249.5 125 249.5C56.2405 249.5 0.5 193.759 0.5 125C0.5 56.2406 56.2405 0.5 125 0.5C193.759 0.5 249.5 56.2406 249.5 125Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="132"
+          height="124"
+          viewBox="0 0 132 124"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 542px; top: 899px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M199.5 100C199.5 154.952 154.952 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C154.952 0.5 199.5 45.0477 199.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="213"
+          height="217"
+          viewBox="0 0 213 217"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 349px; top: 98px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M213 108.5C213 168.423 165.318 217 106.5 217C47.6817 217 0 168.423 0 108.5C0 48.5771 47.6817 0 106.5 0C165.318 0 213 48.5771 213 108.5Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M212.5 108.5C212.5 168.156 165.033 216.5 106.5 216.5C47.9665 216.5 0.5 168.156 0.5 108.5C0.5 48.8444 47.9665 0.5 106.5 0.5C165.033 0.5 212.5 48.8444 212.5 108.5Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 326px; top: 544px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M199.5 100C199.5 154.952 154.952 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C154.952 0.5 199.5 45.0477 199.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <div
+          style="
+            width: 495px;
+            height: 587px;
+            position: absolute;
+            left: 89px;
+            top: 243px;
+            background: rgba(216, 233, 218, 0.5);
+            border-width: 1px;
+            border-color: #623e3e;
+          "
+        ></div>
+        <svg
+          width="386"
+          height="237"
+          viewBox="0 0 386 237"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 156px; top: 547px"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0H386V237H0V0Z" fill="#D9D9D9"></path>
+        </svg>
+        <div
+          style="
+            width: 327px;
+            height: 78px;
+            position: absolute;
+            left: 185px;
+            top: 600px;
+            background: #fff;
+          "
+        ></div>
+        <div
+          style="
+            width: 304px;
+            height: 61px;
+            position: absolute;
+            left: 198px;
+            top: 339px;
+            border-radius: 50px;
+          "
+        >
+          <div
+            style="
+              width: 304px;
+              height: 70px;
+              position: absolute;
+              left: -1px;
+              top: -50px;
+              border-radius: 5px;
+              background: #d9d9d9;
+            "
+          >
+            <p
+              style="
+                position: absolute;
+                left: 23px;
+                top: 10px;
+                font-size: 18px;
+                text-align: left;
+                color: #000;
+              "
+            >
+              Username
+              <input
+                type="text"
+                placeholder="Username"
+                class="form-control form-control-lg"
+                style="border-radius: 5px; width: 253px"
+                required
+              />
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            width: 304px;
+            height: 61px;
+            position: absolute;
+            left: 198px;
+            top: 461px;
+            border-radius: 20px;
+          "
+        >
+          <div
+            style="
+              width: 304px;
+              height: 70px;
+              position: absolute;
+              left: -1px;
+              top: -50px;
+              border-radius: 5px;
+              background: #d9d9d9;
+            "
+          >
+            <p
+              style="
+                position: absolute;
+                left: 23px;
+                top: 10px;
+                font-size: 18px;
+                text-align: left;
+                color: #000;
+              "
+            >
+              Password
+              <input
+                type="text"
+                placeholder="Password"
+                class="form-control form-control-lg"
+                style="border-radius: 5px; width: 253px"
+                required
+              />
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            width: 327px;
+            height: 40px;
+            position: absolute;
+            left: 185px;
+            top: 690px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.44);
+          "
+        >
+          <p
+            style="
+              position: absolute;
+              font-size: 18px;
+              text-align: left;
+              color: #000;
+            "
+          >
+            <input
+              type="text"
+              placeholder="Enter the Captcha"
+              class="form-control form-control-lg"
+              style="
+                border-radius: 5px;
+                width: 325px;
+                height: 40px;
+                color: #000;
+              "
+              required
+            />
+          </p>
+        </div>
+
+        <p
+          style="
+            width: 279px;
+            height: 31px;
+            position: absolute;
+            left: 258px;
+            top: 558px;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: left;
+            color: #000;
+          "
+        >
+          Secutriy Check
+        </p>
+        <svg
+          width="248"
+          height="41"
+          viewBox="0 0 248 41"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 225px; top: 765px"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0H248V41H0V0Z" fill="#7BD879"></path>
+          <path
+            d="M0.5 0.5H247.5V40.5H0.5V0.5Z"
+            stroke="black"
+            stroke-opacity="0.38"
+          ></path>
+        </svg>
+        <p
+          style="
+            width: 80px;
+            height: 27px;
+            position: absolute;
+            left: 310px;
+            top: 773px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #000;
+          "
+        >
+          Submit
+        </p>
+        <svg
+          width="524"
+          height="1"
+          viewBox="0 0 524 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; left: 77px; top: 200px"
+          preserveAspectRatio="none"
+        >
+          <line y1="0.5" x2="524.001" y2="0.5" stroke="black"></line>
+        </svg>
+        <p
+          style="
+            position: absolute;
+            left: 106px;
+            top: 76px;
+            font-size: 64px;
+            font-weight: 600;
+            text-align: left;
+            color: #000;
+          "
+        >
+          DUCloud Login
+        </p>
+        <p
+          style="
+            position: absolute;
+            left: 149px;
+            top: 160px;
+            opacity: 0.6;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            color: #000;
+          "
+        >
+          Log-in here to get started with the cloud
+        </p>
+      </div>
+      <img
+        src="/public/image/logo.png"
+        style="
+          width: 227px;
+          height: 219px;
+          position: absolute;
+          left: 1595px;
+          top: 46px;
+          border-radius: 10px;
+          object-fit: cover;
+        "
+      />
+    </div>
+  </body>
+</html>
