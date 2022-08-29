@@ -1,0 +1,22 @@
+input {
+  margin: auto;
+  max-width: 50%;
+}
+
+input:hover {
+  background-color: rgb(240, 234, 234);
+}
+
+button {
+  display: block;
+  margin: auto;
+  max-width: 25%;
+  margin-top: 20px;
+  padding: 5px 45px 10px 45px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}

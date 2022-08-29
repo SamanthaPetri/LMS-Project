@@ -1,0 +1,287 @@
+<!--Skip to content
+Sign up
+SamanthaPetri
+/
+SIT764-LMS-Project
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+More
+SIT764-LMS-Project/Registration page/login.html
+@Himanshu-Himan
+Himanshu-Himan Add files via upload
+Latest commit e5b0544 2 days ago
+ History
+ 1 contributor
+410 lines (409 sloc)  11.9 KB-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        height: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      @media (max-width: 480px) {
+        .res-box {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url('/image/back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div
+        class="res-box"
+        style="
+          width: 50%;
+          top: 0;
+          height: auto;
+          position: relative;
+          margin: 50px auto;
+          overflow: hidden;
+          background: #dae4b3;
+          border-width: 1px;
+          border-color: #000;
+          border-radius: 30px;
+        "
+      >
+        <div style="text-align: center">
+          <img src="/image/logo.png" style="margin: 0 auto; width: 200px" />
+        </div>
+        <p
+          style="
+            font-size: 64px;
+            font-weight: 600;
+            color: #000;
+            text-align: center;
+            position: relative;
+          "
+        >
+          DUCloud Login
+        </p>
+        <p
+          style="
+            opacity: 0.6;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #000;
+            margin-bottom: 20px;
+          "
+        >
+          Log-in here to get started with the cloud
+        </p>
+        <svg
+          width="132"
+          height="200"
+          viewBox="0 0 132 200"
+          fill="none"
+          style="position: absolute; left: -69px; top: 724px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M132 100C132 155.228 87.2285 200 32 200C-23.2285 200 -68 155.228 -68 100C-68 44.7715 -23.2285 0 32 0C87.2285 0 132 44.7715 132 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M131.5 100C131.5 154.952 86.9523 199.5 32 199.5C-22.9523 199.5 -67.5 154.952 -67.5 100C-67.5 45.0477 -22.9523 0.5 32 0.5C86.9523 0.5 131.5 45.0477 131.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="350"
+          height="144"
+          viewBox="0 0 350 144"
+          fill="none"
+          style="position: absolute; left: -1px; top: -207px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M350 -31C350 65.6498 271.65 144 175 144C78.3502 144 0 65.6498 0 -31C0 -127.65 78.3502 -206 175 -206C271.65 -206 350 -127.65 350 -31Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M349.5 -31C349.5 65.3737 271.374 143.5 175 143.5C78.6263 143.5 0.5 65.3737 0.5 -31C0.5 -127.374 78.6263 -205.5 175 -205.5C271.374 -205.5 349.5 -127.374 349.5 -31Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="132"
+          height="250"
+          viewBox="0 0 132 250"
+          fill="none"
+          style="position: absolute; right: 0; top: 297px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M250 125C250 194.036 194.036 250 125 250C55.9644 250 0 194.036 0 125C0 55.9644 55.9644 0 125 0C194.036 0 250 55.9644 250 125Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M249.5 125C249.5 193.759 193.759 249.5 125 249.5C56.2405 249.5 0.5 193.759 0.5 125C0.5 56.2406 56.2405 0.5 125 0.5C193.759 0.5 249.5 56.2406 249.5 125Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="132"
+          height="124"
+          viewBox="0 0 132 124"
+          fill="none"
+          style="position: absolute; left: 542px; top: 899px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M199.5 100C199.5 154.952 154.952 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C154.952 0.5 199.5 45.0477 199.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="213"
+          height="217"
+          viewBox="0 0 213 217"
+          fill="none"
+          style="position: absolute; left: -110px; top: -42px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M213 108.5C213 168.423 165.318 217 106.5 217C47.6817 217 0 168.423 0 108.5C0 48.5771 47.6817 0 106.5 0C165.318 0 213 48.5771 213 108.5Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M212.5 108.5C212.5 168.156 165.033 216.5 106.5 216.5C47.9665 216.5 0.5 168.156 0.5 108.5C0.5 48.8444 47.9665 0.5 106.5 0.5C165.033 0.5 212.5 48.8444 212.5 108.5Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          style="position: absolute; left: 0; bottom: -130px"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z"
+            fill="#FECB7E"
+          ></path>
+          <path
+            d="M199.5 100C199.5 154.952 154.952 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C154.952 0.5 199.5 45.0477 199.5 100Z"
+            stroke="black"
+            stroke-opacity="0.6"
+          ></path>
+        </svg>
+        <div
+          style="width: 100%; border-width: 2px; border-color: #000000"
+        ></div>
+        <div
+          style="
+            background-color: #d0d0d0;
+            width: 310px;
+            margin: 30px auto;
+            display: block;
+            padding: 30px;
+            border-radius: 30px;
+          "
+        >
+          <p
+            style="
+              left: 23px;
+              top: 10px;
+              font-size: 18px;
+              text-align: left;
+              color: #000;
+            "
+          >
+            Username
+          </p>
+          <input
+            type="text"
+            placeholder="Username"
+            class="form-control form-control-lg"
+            style="
+              border-radius: 5px;
+              width: 253px;
+              padding: 5px;
+              margin: 10px 0px;
+            "
+            required
+          />
+          <p style="font-size: 18px; text-align: left; color: #000">Password</p>
+          <input
+            type="text"
+            placeholder="Password"
+            class="form-control form-control-lg"
+            style="
+              border-radius: 5px;
+              width: 253px;
+              padding: 5px;
+              margin: 10px 0px;
+            "
+            required
+          />
+          <button
+            style="
+              background-color: green;
+              width: 253px;
+              color: white;
+              padding: 5px;
+              border-radius: 7px;
+              margin: 10px 0px;
+            "
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <p
+        style="
+          width: 100%;
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          color: white;
+          margin-bottom: 50px;
+        "
+      >
+        Footer © 2022 , Inc. Footer navigation Terms Privacy Security Status
+        Docs Contact Pricing API Training Blog About
+      </p>
+    </div>
+  </body>
+</html>
